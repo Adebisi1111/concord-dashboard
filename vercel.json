@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "crons": [
+    {
+      "path": "/api/settle",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}

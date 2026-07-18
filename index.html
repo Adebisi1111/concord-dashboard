@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%237c3aed'/%3E%3Ctext x='50' y='66' font-size='54' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EC%3C/text%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concord — Live Agent Economy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="logo">C</div>
+          <div>
+            <h1>Concord</h1>
+            <p class="tag">Autonomous USDC payroll on Arc — a boss who never forgets payday.</p>
+          </div>
+        </div>
+        <div class="status">
+          <span id="pulse" class="pulse"></span>
+          <span id="statusText">connecting…</span>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <span class="label">Total USDC paid</span>
+          <span class="value" id="totalPaid">—</span>
+        </div>
+        <div class="card">
+          <span class="label">Payments executed</span>
+          <span class="value" id="payCount">—</span>
+        </div>
+        <div class="card">
+          <span class="label">Subscriptions created</span>
+          <span class="value" id="subCount">—</span>
+        </div>
+        <div class="card">
+          <span class="label">Vault USDC balance</span>
+          <span class="value" id="vaultBal">—</span>
+        </div>
+      </section>
+
+      <section class="feed">
+        <div class="feed-head">
+          <h2>Live payment feed</h2>
+          <span class="muted" id="lastUpdate"></span>
+        </div>
+        <ul id="feedList">
+          <li class="muted">Loading on-chain activity…</li>
+        </ul>
+      </section>
+
+      <footer>
+        <span>Contract: <a id="vaultLink" target="_blank" rel="noopener">0xd25A…5a0F</a></span>
+        <span>Chain: Arc testnet · USDC (6 decimals)</span>
+        <span>Agentic Economy · Encode Club × Arc</span>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

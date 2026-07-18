@@ -1,0 +1,4 @@
+wallet.json
+*.log
+.env
+node_modules/
